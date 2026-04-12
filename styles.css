@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(135deg, #ff7e7e, #f6b5a5);
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.sidebar li {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  background: #ff6b6b;
+  color: white;
+}
+
+.logout {
+  margin-top: auto;
+  padding: 10px;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+}
+
+/* Contacts */
+.contacts {
+  width: 25%;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
+.contact-list {
+  margin-top: 15px;
+}
+
+.contact {
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.contact.active {
+  background: #d4f1ec;
+}
+
+/* Details */
+.details {
+  flex: 1;
+  background: #fff;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.top img {
+  border-radius: 50%;
+}
+
+.call {
+  margin-left: auto;
+  background: green;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Info */
+.info {
+  margin-top: 20px;
+}
+
+.tag {
+  background: #eee;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+/* Tabs */
+.tabs {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.tabs span {
+  cursor: pointer;
+}
+
+.tabs .active {
+  color: red;
+  border-bottom: 2px solid red;
+}
+
+/* Cards */
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 10px;
+}

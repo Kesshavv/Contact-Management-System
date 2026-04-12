@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>📞 Call Sumo</h2>
+    <div class="profile">
+      <img src="https://i.pravatar.cc/100" alt="">
+      <p>Welcome back,</p>
+      <h3>Sarah Johnson</h3>
+    </div>
+
+    <ul>
+      <li>📩 Voicemails</li>
+      <li class="active">👥 Contacts</li>
+      <li>✅ Tasks</li>
+      <li>⚙ Settings</li>
+    </ul>
+
+    <button class="logout">Logout</button>
+  </div>
+
+  <!-- Contacts List -->
+  <div class="contacts">
+    <div class="header">
+      <h2>Contacts</h2>
+      <button class="new-btn">+ New</button>
+    </div>
+
+    <input type="text" placeholder="🔍 Search">
+
+    <div class="contact-list">
+      <div class="contact active" onclick="selectContact(this, 'Barbara Gordon')">Barbara Gordon</div>
+      <div class="contact" onclick="selectContact(this, 'Tony Stark')">Tony Stark</div>
+      <div class="contact" onclick="selectContact(this, 'Peter Parker')">Peter Parker</div>
+      <div class="contact" onclick="selectContact(this, 'Diana Prince')">Diana Prince</div>
+    </div>
+  </div>
+
+  <!-- Details Panel -->
+  <div class="details">
+    <div class="top">
+      <img src="https://i.pravatar.cc/80" alt="">
+      <div>
+        <h2 id="name">Barbara Gordon</h2>
+        <p>(704) 555-0127</p>
+      </div>
+      <button class="call">📞 Call Now</button>
+    </div>
+
+    <div class="info">
+      <p><b>Email:</b> barbara@example.com</p>
+      <p><b>Address:</b> Mountain View, USA</p>
+      <p><b>Tags:</b> <span class="tag">Sales</span> <span class="tag">Client</span></p>
+    </div>
+
+    <div class="tabs">
+      <span class="active">Voicemails</span>
+      <span>Tasks</span>
+      <span>Notes</span>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <p>Barbara left a voicemail...</p>
+        <span>12:34 Today</span>
+      </div>
+      <div class="card">
+        <p>Follow-up required</p>
+        <span>Yesterday</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
